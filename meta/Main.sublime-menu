@@ -1,0 +1,76 @@
+[
+    {
+        "id": "tools",
+        "caption": "Tools",
+        "children":
+        [
+            {
+                "id": "html_entities",
+                "caption": "HtmlEntities",
+                "children":
+                [
+                    {
+                        "caption": "Encode",
+                        "command": "html_entities",
+                        "args": {"action": "encode"},
+                    },
+                    {
+                        "caption": "Decode",
+                        "command": "html_entities",
+                        "args": {"action": "decode"},
+                    },
+                    {
+                        "caption": "Number to Name",
+                        "command": "html_entities",
+                        "args": {"action": "num2name"},
+                    },
+                ]
+            }
+        ]
+    },
+    {
+        "caption": "Preferences",
+        "mnemonic": "n",
+        "id": "preferences",
+        "children":
+        [
+            {
+                "caption": "Package Settings",
+                "mnemonic": "P",
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "HtmlEntities",
+                        "children":
+                        [
+                            {
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/HtmlEntities/README.md"
+                                },
+                                "caption": "README"
+                            },
+                            {
+                                "command": "edit_settings",
+                                "args": {
+                                    "base_file": "${packages}/HtmlEntities/HtmlEntities.sublime-settings",
+                                    "default": "{\n\t$0\n}\n"
+                                },
+                                "caption": "Settings"
+                            },
+                            {
+                                "command": "edit_settings",
+                                "args": {
+                                    "base_file": "${packages}/HtmlEntities/meta/Default.sublime-keymap",
+                                    "default": "[\n\t$0\n]\n"
+                                },
+                                "caption": "Key Bindings"
+                            },
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

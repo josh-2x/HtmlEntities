@@ -1,0 +1,17 @@
+[
+    {
+        "keys": ["ctrl+shift+e"],
+        "command": "html_entities",
+        "args": {"action": "encode"},
+    },
+    {
+        "keys": ["ctrl+shift+d"],
+        "command": "html_entities",
+        "args": {"action": "decode"},
+    },
+    {
+        "keys": ["ctrl+shift+n"],
+        "command": "html_entities",
+        "args": {"action": "num2name"},
+    },
+]
